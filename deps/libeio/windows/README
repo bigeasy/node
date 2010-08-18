@@ -1,0 +1,47 @@
+Requirements to build.
+
+ * git with some flavor of ssh.
+ * Visual Studio C++ 2008 Express Edition
+ * The pthreads headers and ddl.
+
+Let's assume you've already pulled the source code from GitHub onto Windows.
+
+ * Place the headers in a folder named pthreads next to the node checkout.
+ * Open the project at node/deps/libeio/windows/vstudio/libeio.vcproj.
+ * Press F7.
+
+The required directory structure can be seen below.
+
+- projects
+ \
+  + node
+  |\
+  | + benchmark
+  | + bin
+  | + deps
+  | |\
+  | | + c-ares
+  | | + http_parser
+  | | + libeio
+  | | |\
+  | | | + windows
+  | | |  \
+  | | |   + headers
+  | | |   + vstudio
+  | | |    \
+  | | |     + libeio.vcproj <- double click
+  | | + libev
+  | | + v8
+  | + doc
+  | + lib
+  | + src
+  | + test
+  | + tools
+  |
+  + pthreads <- create this directory and place pthreads headers.
+   \
+    + pthread.h
+    + sched.h
+    + semaphore.h
+
+Please direct any questions to the Node.js mailing list.

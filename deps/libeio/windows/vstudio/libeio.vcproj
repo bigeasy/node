@@ -39,7 +39,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="bogus;C:\codearea\src\pthreads;.."
+				AdditionalIncludeDirectories="..\headers;..\..\..\..\..\pthreads;..\.."
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -166,6 +166,10 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\config.h"
+				>
+			</File>
 			<File
 				RelativePath=".\missing.h"
 				>
