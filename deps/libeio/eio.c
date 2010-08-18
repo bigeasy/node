@@ -68,14 +68,14 @@
 #ifndef EIO_FEED
 # define EIO_FEED(req)    do { if ((req)->feed   ) (req)->feed    (req); } while (0)
 #endif
-
+#undef _WIN32
 #ifdef _WIN32
 
   /*doh*/
 #else
 
 # include "config.h"
-# include <sys/time.h>
+	# include <sys/time.h>
 # include <sys/select.h>
 # include <sys/mman.h>
 # include <unistd.h>
